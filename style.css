@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth; 
+  }
 body {
     display: flex;
     flex-direction: column;
@@ -10,34 +13,30 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    color: rgb(94, 74, 74);
+    border: 1px solid red;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
-.header-container {
-    display: block;
+.header {
+
+}
+.container {
     max-width: 1440px;
     margin: 0 auto;
-    min-height: 50px;
-    background-color: rgba(224, 224, 224, 0.849);
-}
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-}
-.nav-list {
-    list-style: none;
-}
-.nav-item {
-}
-.nav-link {
+    border: 1px solid red;
+  }
+.header_container {
     position: relative;
-    padding: 0 12px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 300;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+    border: 1px solid red;
+    text-transform: uppercase;
 }
-.toggle {
+.burger_btn {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -56,4 +55,88 @@ body {
     background: #fff;
     margin: 3px 0;
     z-index: 15;
+}
+.header_photo {
+    width: 30%;
+    display: flex;
+}
+.header_img {
+    width: 100%;
+    min-height: 244px;
+    min-width: 324px;
+}
+.header_content {
+    width: 70%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid red;
+    font-size: 18px;
+    list-style: none;
+}
+.nav_list {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav_list ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.nav_item {
+    
+}
+ul li {
+    list-style-type:none;
+    padding-left:0px;
+    margin-left:0px;
+}
+
+
+.nav_item::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+}
+.nav_link {
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+.header_info {
+    display: flex;
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border: 1px solid red;
+}
+.header_title {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.header_subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.main {
+    border: 1px solid red;
+}
+.footer {
+    border: 1px solid red;
+    min-height: 10px;
 }
