@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; 
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid red;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.header {
+
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+.header_container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+    border: 1px solid red;
+    text-transform: uppercase;
+}
+.burger_btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    user-select: none;
+    z-index: 15;
+}
+.line1 .line2 .line3 {
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    margin: 3px 0;
+    z-index: 15;
+}
+.header_photo {
+    width: 30%;
+    display: flex;
+}
+.header_img {
+    width: 100%;
+    min-height: 244px;
+    min-width: 324px;
+}
+.header_content {
+    width: 70%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid red;
+    font-size: 18px;
+    list-style: none;
+}
+.nav_list {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav_list ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.nav_item {
+    
+}
+ul li {
+    list-style-type:none;
+    padding-left:0px;
+    margin-left:0px;
+}
+
+
+.nav_item::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+}
+.nav_link {
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+.header_info {
+    display: flex;
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border: 1px solid red;
+}
+.header_title {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.header_subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.main {
+    border: 1px solid red;
+}
+.footer {
+    border: 1px solid red;
+    min-height: 10px;
+}
