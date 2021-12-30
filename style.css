@@ -99,8 +99,8 @@ body {
 }
 .header_img {
     width: 100%;
-    min-height: 322px;
-    min-width: 430px;
+    height: 322,3168654173765px;
+    width: 430px;
 }
 .header_content {
     width: 70%;
@@ -144,12 +144,14 @@ ul li {
     height: 2px;
     width: 0%;
     bottom: 0;
+    color: rgb(28, 0, 65);
 }
 .nav_link {
     padding: 0 0 0 10px;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
+    color: rgb(28, 0, 65);
 }
 .header_info {
     display: flex;
@@ -403,8 +405,8 @@ ul li {
         padding: 0;
     }
     .header_img {
-        min-width: 330px;
-        min-height: 180px;
+        width: 335,4285714285714px;
+        height: 251,4285714285714px;
     }
     .item_text {
         padding: 5px;
