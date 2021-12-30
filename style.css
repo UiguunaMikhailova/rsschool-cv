@@ -12,9 +12,9 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    border: 1px solid red;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    background-color: #7338d327;
 }
 .header {
 
@@ -22,7 +22,6 @@ body {
 .container {
     max-width: 1240px;
     margin: 0 auto;
-    border: 1px solid red;
   }
 .header_container {
     position: relative;
@@ -31,7 +30,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items:flex-start;
-    border: 1px solid red;
     text-transform: uppercase;
 }
 .burger_btn {
@@ -116,7 +114,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    border: 1px solid red;
     font-size: 24px;
     list-style: none;
     padding: 0 20px;
@@ -124,6 +121,8 @@ body {
 .nav_list {
     display: flex;
     justify-content: flex-end;
+    color: rgb(28, 0, 65);
+    padding: 5px 10px 5px;
 }
 .nav_list ul {
     margin: 0;
@@ -131,7 +130,6 @@ body {
     display: inline-block;
 }
 .nav_item {
-    
 }
 ul li {
     list-style-type:none;
@@ -152,26 +150,30 @@ ul li {
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
-    color: rgb(0, 0, 0);
 }
 .header_info {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    border: 1px solid red;
 }
 .header_title {
     font-weight: 700;
     font-size: 45px;
     letter-spacing: 1px;
     margin: 30px 20px 0px;
+    background-color: #7338d34f;
+    padding: 0 10px;
+    color: rgb(28, 0, 65);
 }
 .header_subtitle {
     font-weight: 700;
     font-size: 28px;
     letter-spacing: 0.5px;
     margin: 10px 20px 0px;
+    background-color: #7338d34f;
+    padding: 0 10px;
+    color: rgb(28, 0, 65);
 }
 @media screen and (max-width: 1110px) {
     .header_info {
@@ -194,7 +196,7 @@ ul li {
     }
 }
 .main_content {
-    border: 1px solid red;
+    
 }
 .main_content_container {
     display: flex;
@@ -203,8 +205,9 @@ ul li {
     min-width: 430px;
     display: flex;
     flex-direction: column;
-    padding: 20px 0 0 30px;
-    border: 1px solid red;
+    padding: 20px 30px;
+    background-color: #7338d34f;
+    color: rgb(28, 0, 65);
 }
 .contacts {
     
@@ -216,10 +219,18 @@ ul li {
     padding: 20px 0 0 20px;
     margin: 0;
 }
+.section_header2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px 0 0 20px;
+    margin: 0;
+    color: rgb(28, 0, 65);
+}
 .divider {
-    height: 2px;
+    height: 3px;
     width: 100%;
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(86, 15, 179);
     padding: 0 0 0 20px;
 }
 .list {
@@ -229,18 +240,18 @@ ul li {
 .item {
     font-size: 20px;
     font-weight: 600;
-    color: #000;
+    color: rgb(28, 0, 65);
     margin: 15px 0 0 0;
 }
 .item_text {
-    font-weight: 500;
-    color: #000;
+    font-weight: 600;
+    color: rgb(28, 0, 65);
     padding: 15px;
     margin: 0;
 }
 .item_link {
-    color: #000;
     text-decoration: none;
+    color: rgb(28, 0, 65);
 }
 .skills {
 }
@@ -256,12 +267,14 @@ ul li {
 }
 .main {
     margin: 20px 0 0 30px;
+    color: rgb(28, 0, 65);
 }
 .main_descr {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
     color: #000;
     padding: 20px 15px;
+    color: rgb(28, 0, 65);
 }
 .subtitle {
     font-size: 22px;
@@ -271,14 +284,14 @@ ul li {
     margin: 0;
 }
 .pre {
+    background-color: rgb(241, 234, 250);;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
     align-self: center;
-    width: 100%;
     color: rgb(119, 119, 119);
     margin: 30px;
-    padding: 0;
+    padding: 10px;
 }
 .code {
     width: 100%;
@@ -310,7 +323,7 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid #000;
+    background-color: #7338d34f;
     text-align: center;
     min-height: 200px;
     width: 400px;
@@ -345,15 +358,16 @@ ul li {
     margin: 0;
 }
 .footer {
-    border: 1px solid red;
-    margin-top: 20px;
+    margin-top: -0.82px;
 }
 .footer_container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #7338d375;
 }
 .rsschool {
+    margin-top: 20px;
     width: 280px;
 }
 .date {
@@ -362,6 +376,7 @@ ul li {
     align-self: flex-end;
 }
 .github_img {
+    margin-top: 20px;
     width: 100px;
 }
 @media screen and (max-width: 890px) {
@@ -440,6 +455,7 @@ ul li {
         flex-direction: column;
         width: 100%;
         align-items: center;
+        
     }
 }
 @media screen and (max-width: 455px) {
@@ -481,6 +497,8 @@ ul li {
     }
     .header_img img {
         max-width: 200px;
-        
+    }
+    .item_text {
+        font-size: 18px;
     }
 }
