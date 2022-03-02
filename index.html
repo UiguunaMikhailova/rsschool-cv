@@ -14,17 +14,25 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
+  
+    
+    <div class="container">
+        <div class="background_image1">
+            <img src="img/Group 46.png" alt="">
+    </div>
+    <div class="background_image2">
+        <img src="img/Group 77.png" alt="">
+</div>
+        <header class="header">
+            
             <div class="header_container">
+                
                 <div class="burger_btn">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-                <div class="header_photo">
-                    <img src="img/IMG_1222.jpg" alt="photo" class="header_img">
-                </div>
+                <div class="header_photo"></div>
                 <div class="header_content">
                     <nav class="nav">
                         <div class="nav_menu">
@@ -60,10 +68,8 @@
                     </div>
                 </div>
             </div>
-        </div>
     </header>
     <div class="main_content">
-        <div class="container">
             <div class="main_content_container">
                 <aside class="aside">
                     <section class="contacts" id="#contacts">
@@ -108,36 +114,9 @@
                             <li class="item skills_github">GitHub</li>
                         </ul>
                     </section>
-                </aside>
-                <main class="main">
-                    <section class="main_about">
-                        <h2 class="section_header2" id="#about">About myself</h2>
-                        <div class="divider"></div>
-                        <div class="main_descr">
-                            I am 24 years old. I want to learn Front-End Development in RSSchool. I have good
-                            interpersonal skills, am an excellent team worker and very willing to learn and develop new
-                            skills.
-                        </div>
-                    </section>
-                    <section class="main_languages">
-                        <h2 class="section_header2" id="#english">Languages</h2>
-                        <div class="divider"></div>
-                        <ul class="list">
-                            <li class="item">English:
-                                <p class="item_text">
-                                    <a class="item_link" href="https://test.str.by/">StreamLine School test result:
-                                        Pre-Intermediate (CEFR A2+)</a>
-                                </p>
-                            </li>
-                            <li class="item">Russian:
-                                <p class="item_text">Native speaker</p>
-                            </li>
-                        </ul>
-                    </section>
                     <section class="main_education">
                         <h2 class="section_header2" id="#education">Education</h2>
                         <div class="divider"></div>
-                        <p class="main_descr">Arctic State Institute of Culture and Arts - Pedagogy of ballet</p>
                         <div class="courses">
                             <h4 class="subtitle">Courses:</h4>
                             <ul class="list">
@@ -166,12 +145,46 @@
                         </div>
 
                     </section>
+                </aside>
+                <main class="main">
+                    <section class="main_about">
+                        <h2 class="section_header2" id="#about">About myself</h2>
+                        <div class="divider"></div>
+                        <div class="main_descr">
+                            I am 24 years old. I want to learn Front-End Development in RSSchool. I have good
+                            interpersonal skills, am an excellent team worker and very willing to learn and develop new
+                            skills.
+                        </div>
+                    </section>
+                    <section class="main_languages">
+                        <h2 class="section_header2" id="#english">Languages</h2>
+                        <div class="divider"></div>
+                        <ul class="list">
+                            <li class="item">English:
+                                <p class="item_text">
+                                    <a class="item_link" href="https://test.str.by/">StreamLine School test result:
+                                        Pre-Intermediate (CEFR A2+)</a>
+                                </p>
+                            </li>
+                            <li class="item">Russian:
+                                <p class="item_text">Native speaker</p>
+                            </li>
+                        </ul>
+                    </section>
                     <section class="code" id="#code">
                         <h2 class="section_header2">Code example</h2>
                         <div class="divider"></div>
+                        <div class="main_descr">
+                            CODEWARS 6 kyu - Data Reverse
+                        </div>
                         <pre class="pre">
-                            <code class="code">    <span class="function">function</span> <span class="function_name">showMessage</span>() {
-       <span class="return">return</span>( <span class="hello">'hello world!'</span> );
+                            <code class="code">    <span class="function">function</span> <span class="function_name">dataReverse</span>(<span class="function_name">data</span>) {
+       <span class="function">const</span> <span class="function_name">size</span> = <span class="function_name">8</span>
+       <span class="function">const</span> <span class="function_name">array</span> = []
+       <span class="function">for</span> (<span class="function">let</span> <span class="function_name">i</span> = <span class="function_name">0</span>; i < data.length; i += size) {
+                array.push(data.slice(i, i + size))
+       }
+       <span class="function">return</span> <span class="hello">array.reverse().flat()</span>
     }</code>
                         </pre>
                     </section>
@@ -202,10 +215,8 @@
                     </section>
                 </main>
             </div>
-        </div>
     </div>
     <footer class="footer">
-        <div class="container">
             <div class="footer_container">
                 <div class="rsschool">
                     <a href="https://rs.school/js-stage0/" class="github_link">
@@ -219,8 +230,8 @@
                     </a>
                 </div>
             </div>
-        </div>
     </footer>
+    </div>
 </body>
 
 </html>
