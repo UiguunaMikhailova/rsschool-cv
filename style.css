@@ -319,10 +319,10 @@ ul li {
     display: none;
     justify-content: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    border: solid 2px var(--blue);
-    width: 380px;
+    border: solid 1px var(--blue);
+    width: 370px;
     margin: 10px 0;
 }
 
@@ -340,6 +340,7 @@ ul li {
     justify-content: space-around;
     text-align: center;
     min-height: 100px;
+    padding: 0 10px;
 }
 
 .project_tech {
@@ -359,7 +360,7 @@ ul li {
 }
 
 .project_link img {
-    width: 376px;
+    width: 369px;
 }
 
 .project_title {
