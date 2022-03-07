@@ -2,7 +2,25 @@ const slides = document.querySelectorAll('.project1')
 const back = document.querySelector('.back')
 const next = document.querySelector('.next')
 
-let index = 0
+const iconMenu = document.querySelector('.menu-icon')
+const headerNav = document.querySelector('.nav_menu')
+const menuLinks = document.querySelectorAll('.nav_list')
+
+iconMenu.addEventListener("click", function () {
+        iconMenu.classList.toggle('active')
+        headerNav.classList.toggle('active')
+})
+menuLinks.forEach(menuLink => {
+    menuLink.addEventListener("click", () => {
+        if (iconMenu.classList.contains('active')) {
+            iconMenu.classList.remove('active')
+            headerNav.classList.remove('active')
+        }
+    });
+})
+
+
+let index = 0  
 console.log(slides)
 
 back.addEventListener('click',  prevSlide);
