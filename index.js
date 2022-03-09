@@ -16,37 +16,35 @@ menuLinks.forEach(menuLink => {
             iconMenu.classList.remove('active')
             headerNav.classList.remove('active')
         }
-    });
+    })
 })
 
+let index = 0
 
-let index = 0  
-console.log(slides)
-
-back.addEventListener('click',  prevSlide);
-next.addEventListener('click',  nextSlide);
+back.addEventListener('click',  prevSlide)
+next.addEventListener('click',  nextSlide)
 
 function activeSlide(i) {
     for (let slide of slides) {
-        slide.classList.remove('active');
+        slide.classList.remove('active')
     }
-    slides[i].classList.add('active');
-};
+    slides[i].classList.add('active')
+}
 function nextSlide() {
     if (index === slides.length - 1) {
-        index = 0;
-        activeSlide(index);
+        index = 0
+        activeSlide(index)
     } else {
-        index++;
-        activeSlide(index);
+        index++
+        activeSlide(index)
     }
-};
+}
 function prevSlide() {
     if (index === 0) {
-        index = slides.length - 1;
-        activeSlide(index);
+        index = slides.length - 1
+        activeSlide(index)
     } else {
-        index--;
-        activeSlide(index);
+        index--
+        activeSlide(index)
     }
-};
+}
